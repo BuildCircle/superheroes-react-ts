@@ -9,11 +9,24 @@ During a battle the character with the highest score wins.
 We expect the solution to be simple, readable, and to be supported by good unit tests (reliable, fast, and asserting behaviour).
 
 
+## Setup
+
+The project uses Node 24 (see `.nvmrc`), [Vite](https://vite.dev) and [Vitest](https://vitest.dev).
+
+```
+yarn install
+yarn dev
+```
+
+The app is then served at http://localhost:5173 (`yarn start` does the same). `yarn build` creates a production build in `dist`.
+
 ## 1. Run the tests
 
 ```
 yarn test
 ```
+
+This runs Vitest, which stays in watch mode in a terminal (press `q` to quit). Use `yarn test --run` for a single run.
 
 ## 2. Check the code
 
