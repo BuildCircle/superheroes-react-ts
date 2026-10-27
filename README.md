@@ -26,7 +26,9 @@ The app is then served at http://localhost:5173 (`yarn start` does the same). `y
 yarn test
 ```
 
-This runs Vitest, which stays in watch mode in a terminal (press `q` to quit). Use `yarn test --run` for a single run.
+This runs the tests once. Use `yarn test:watch` to re-run them as you change code.
+
+Tests use Vitest with React Testing Library. The API matches Jest (`test`, `expect` and the jest-dom matchers are available globally); use `vi.fn()` and `vi.mock()` where you would use `jest.fn()` and `jest.mock()`.
 
 ## 2. Check the code
 
